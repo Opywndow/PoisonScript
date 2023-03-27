@@ -33,5 +33,6 @@ tool.Activated:Connect(function()
         game.Players.LocalPlayer.Character.Humanoid:SetAttribute("SpeedBoost", getgenv().CustomVitamins.SpeedBoost + OldSpeedBoost)
         task.wait(getgenv().CustomVitamins.EffectDuration)
         game.Players.LocalPlayer.Character.Humanoid:SetAttribute("SpeedBoost", OldSpeedBoost)
-    end
+        game.ScreenGui.Create."rbxassetid://10482563149".Delete
+   end
 end)
